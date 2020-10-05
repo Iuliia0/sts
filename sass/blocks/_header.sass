@@ -1,1 +1,44 @@
 .header
+  padding-top: 24px
+  padding-bottom: 28px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    width: 180px
+    height: 20px
+  &-menu
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style: none
+    height: 36px
+    // border-right: 1px solid #C3C6D7
+    &__item
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      padding-right: 40px
+    &__line
+      width: 1px
+      height: 36px
+      background-color: #C3C6D7
+      padding: 0
+      margin-right: 40px
+  &-contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+    &__place
+      font-size: 12px
+      line-height: 14px
+      color: $blue-text
+      &::after
+        content: url('../img/down.svg')
+        padding-left: 4px
+    &__number
+      font-size: 20px
+      line-height: 24px
+      color: $dark-number
