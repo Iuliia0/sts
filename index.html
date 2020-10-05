@@ -1,88 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СТС-Уборка</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>СТС-Уборка</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__logo">
-          <img src="img/logo.svg" alt="Icon: logo" class="header__logo-img" />
-        </div>
-        <!-- /.header__logo -->
-        <ul class="header-menu">
-          <li class="header-menu__item">Услуги</li>
-          <li class="header-menu__item">Компаниям</li>
-          <li class="header-menu__item">Участие в тендерах</li>
-          <li class="header-menu__item">Портфолио</li>
-          <li class="header-menu__item">О нас</li>
-          <li class="header-menu__item">Блог</li>
-          <li class="header-menu__item header-menu__line"></li>
-          <li class="header-menu__item">
-            <div class="header-contacts">
-              <span class="header-contacts__place">Москва и область</span>
-              <a href="tel:+74955632345" class="header-contacts__number">+7 495 563-23-45</a>
-            </div>
-          </li>
-        </ul>
-        <!-- /.header-menu -->
-
-        <!-- /.header-contacts -->
-      </div>
-      <!-- /.header__wrapper -->
-    </div>
-    <!-- /.container -->
-  </header>
-  <!-- /.header -->
-  <section class="services">
-    <div class="container">
-      <div class="services__wrapper">
-        <div class="services-description__block">
-          <h1 class="services-description__titel">Наши услуги</h1>
-          <p class="services-description__text">Оптимизирует ваш рабочий процесс, автоматически объединяя HR, льготы,
-            заработную плату и планирование на одной платформе.</p>
-          <button class="services-description__button">Заказать уборку</button>
-          <div class="services-description__img">
-            <img src="img/hero-img.svg" alt="Icon: man" class="services-description__item">
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="Icon: logo" class="header__logo-img" />
           </div>
-        </div>
-        <!-- /.services-description__block -->
-        <div class="services-offers__block">
-          <ul class="services-offers__tabs">
-            <li class="services-offers__item">Компаниям</li>
-            <li class="services-offers__item">Частным клиентам</li>
-            <li class="services-offers__item">Спец. предложения</li>
+          <!-- /.header__logo -->
+          <ul class="header-menu">
+            <li class="header-menu__item">Услуги</li>
+            <li class="header-menu__item">Компаниям</li>
+            <li class="header-menu__item">Участие в тендерах</li>
+            <li class="header-menu__item">Портфолио</li>
+            <li class="header-menu__item">О нас</li>
+            <li class="header-menu__item">Блог</li>
+            <li class="header-menu__item header-menu__line"></li>
+            <li class="header-menu__item">
+              <div class="header-contacts">
+                <span class="header-contacts__place">Москва и область</span>
+                <a href="tel:+74955632345" class="header-contacts__number"
+                  >+7 495 563-23-45</a
+                >
+              </div>
+            </li>
           </ul>
-          <div class="services-offers__cards">
-            <div class="services-offers__item">
-              <img src="img/24.svg" alt="Icon: time" class="services-offers__img">
-              <h2 class="services-offers__titel">Ежедневная уборка</h2>
-              <p class="services-offers__text">Квартир, зданий, производственных помещений и офсиов</p>
-            </div>
-            <!-- /.services-offers__item -->
-            <div class="services-offers__item">
-              <img src="img/24.svg" alt="Icon: time" class="services-offers__img">
-              <h2 class="services-offers__titel">Ежедневная уборка</h2>
-              <p class="services-offers__text">Квартир, зданий, производственных помещений и офсиов</p>
-            </div>
-            <!-- /.services-offers__item -->
-          </div>
-          <!-- /.services-offers__cards -->
-        </div>
-        <!-- /.services-offers__blocks -->
-      </div>
-      <!-- /.services__wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.services -->
-</body>
+          <!-- /.header-menu -->
 
+          <!-- /.header-contacts -->
+        </div>
+        <!-- /.header__wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <section class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <div class="services-description__wrapper">
+            <div class="services-description__block">
+              <h1 class="services-description__titel">Наши услуги</h1>
+              <p class="services-description__text">
+                Оптимизирует ваш рабочий процесс, автоматически объединяя HR,
+                льготы, заработную плату и планирование на одной платформе.
+              </p>
+              <button class="services-description__button">
+                Заказать уборку
+              </button>
+            </div>
+            <!-- /.services-description__block -->
+            <div class="services-description__img">
+              <img
+                src="img/hero-img.svg"
+                alt="Icon: man"
+                class="services-description__item"
+              />
+            </div>
+          </div>
+          <!-- /.services-description__wrapper -->
+          <div class="services-offers__block">
+            <ul class="services-offers__tabs">
+              <li class="services-offers__item services-offers__item_active">
+                Компаниям
+              </li>
+              <li class="services-offers__item">Частным клиентам</li>
+              <li class="services-offers__item">Спец. предложения</li>
+            </ul>
+            <div class="services-offers__wrapper">
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Ежедневная уборка</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Промышленный клининг</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+            </div>
+            <!-- /.services-offers__wrapper -->
+            <div class="services-offers__wrapper">
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Мойка окон и фасадов</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Уборка офисов под ключ</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+            </div>
+            <!-- /.services-offers__wrapper -->
+            <div class="services-offers__wrapper">
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Послестроительная уборка</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Клининг для ТСЖ, ЖСК, УК</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+            </div>
+            <!-- /.services-offers__wrapper -->
+            <div class="services-offers__wrapper">
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Обслуживание мероприятий</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+              <div class="services-offers__cards">
+                <img
+                  src="img/24.svg"
+                  alt="Icon: time"
+                  class="services-offers__img"
+                />
+                <h2 class="services-offers__titel">Предоставление персонала</h2>
+                <p class="services-offers__text">
+                  Квартир, зданий, производственных помещений и офсиов
+                </p>
+              </div>
+              <!-- /.services-offers__cards -->
+            </div>
+            <!-- /.services-offers__wrapper -->
+          </div>
+          <!-- /.services-offers__blocks -->
+        </div>
+        <!-- /.services__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.services -->
+  </body>
 </html>
