@@ -1,20 +1,12 @@
-// var triangle = document.getElementById("triangle");
-// var length = triangle.getTotalLength();
-
-// // The start position of the drawing
-// triangle.style.strokeDasharray = length;
-
-// // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
-// triangle.style.strokeDashoffset = length;
-
-// // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-// window.addEventListener("scroll", myFunction);
-
-// function myFunction() {
-//   var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
-//   var draw = length * scrollpercent;
-
-//   // Reverse the drawing (when scrolling upwards)
-//   triangle.style.strokeDashoffset = length - draw;
-// }
+$(document).ready(function () {
+  var mySwiper = new Swiper(".result-slide", {
+    slidesPerView: 1.9,
+    // slidesPerGroup: 0.5,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: ".result-slide__button_prev",
+      prevEl: ".result-slide__button_next",
+    },
+  });
+});
