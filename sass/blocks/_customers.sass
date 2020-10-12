@@ -9,14 +9,28 @@
     text-align: center
     margin-bottom: 54px
   &__block
-    background-image: url('../img/customers.png')
-    height: 78px
+    width: 100%
+    min-height: 78px
     margin-bottom: 48px
+    transform-style: inherit
+    position: relative
+    background-image: url('../img/customers.png')
+
     &:last-child
       margin-bottom: 0
     &_1
       background-position: 233px
+      // &:hover
+      //   transform: translateX(20px)
+      //   transition: 1s
     &_2
       background-position: 43px
+      // &:hover
+      //   transform: translateX(-20px)
+      //   transition: 1s
     &_3
       background-position: 339px
+
+  .hover
+    transform: translateX(20px)
+    transition: 1s

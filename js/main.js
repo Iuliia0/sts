@@ -16,6 +16,7 @@ $(document).ready(function () {
       var topOfWindow = $(window).scrollTop();
       if (imagePos < topOfWindow+600) {
         $(this).addClass('animate__fadeInUp');
+        
       }
     });
   });
@@ -31,4 +32,20 @@ $(document).ready(function () {
     $(this).addClass("services-offers__item_active");
   });
 
+var scrollPos = 0;
+$(window).scroll(function(){
+   var st = $(this).scrollTop();
+   if (st > scrollPos){
+     $('.customers__block_1').animate({ "backgroundPosition": "-=3px" }, 30);
+     $('.customers__block_2').animate({ "backgroundPosition": "+=3px" }, 30);
+     $('.customers__block_3').animate({ "backgroundPosition": "-=3px" }, 30);
+
+   } else {
+     $('.customers__block_1').animate({ "backgroundPositionX": "+=3px" }, 30);
+          $('.customers__block_2').animate({ "backgroundPosition": "-=3px" }, 30);
+     $('.customers__block_3').animate({ "backgroundPosition": "+=3px" }, 30);
+   }
+   scrollPos = st;
 });
+
+  });
