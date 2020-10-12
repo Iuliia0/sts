@@ -10,5 +10,13 @@ $(document).ready(function () {
     },
   });
 
- 
+  $(window).scroll(function() {
+    $('.mov').each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass('animate__fadeInUp');
+      }
+    });
+  });
 });
