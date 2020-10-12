@@ -19,4 +19,16 @@ $(document).ready(function () {
       }
     });
   });
+
+    var tabsItem = $(".services-offers__item");
+  var contentItem = $(".services-offers__block");
+
+    tabsItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass("services-offers__item_active");
+    contentItem.removeClass("services-offers__block_active");
+    $(activeContent).addClass("services-offers__block_active");
+    $(this).addClass("services-offers__item_active");
+  });
+
 });
