@@ -9,4 +9,6 @@ $(document).ready(function () {
       prevEl: ".result-slide__button_next",
     },
   });
+
+ 
 });
